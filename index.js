@@ -193,7 +193,9 @@ export default class PickerAny extends React.Component {
 	toggle(){
 		this._toggle();
 	}
-
+	dismiss(){
+		this._slideDown();
+	}
 	_prePressHandle(callback){
 		//通知子组件往上滚
 		this.pickerWheel.moveUp();
